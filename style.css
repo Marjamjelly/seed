@@ -1,0 +1,52 @@
+body {
+  background: #222;
+  color: #33ff33;
+  font-family: 'Courier New', monospace;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.terminal {
+  background: #111;
+  border: 2px solid #33ff33;
+  padding: 2em 2em 3em 2em;
+  width: 400px;
+  min-height: 250px;
+  box-shadow: 0 0 20px #33ff33;
+  position: relative;
+}
+input, button {
+  font-family: inherit;
+  background: #222;
+  color: #33ff33;
+  border: 1px solid #33ff33;
+  padding: 0.5em;
+  margin: 0.5em 0;
+}
+input:focus {
+  outline: none;
+  box-shadow: 0 0 5px #33ff33;
+}
+button {
+  cursor: pointer;
+}
+pre {
+  margin-top: 1em;
+  white-space: pre-line;
+  font-size: 1em;
+}
+.blink-cursor {
+  display: block;
+  width: 10px;
+  height: 22px;
+  background: #33ff33;
+  position: absolute;
+  left: 1.5em;
+  bottom: 1.5em;
+  animation: blink 1s steps(1) infinite;
+}
+@keyframes blink {
+  50% { opacity: 0; }
+}
