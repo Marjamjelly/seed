@@ -2,16 +2,32 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>RNG Terminal</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Seed-based Pixel Fantasy Map Generator</title>
+  <meta name="viewport" content="width=600, initial-scale=1">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div id="centerbox">
-    <form id="seedForm" autocomplete="off">
-      <input id="seedInput" type="text" autofocus autocomplete="off" />
-    </form>
+  <div id="controls">
+    <label>
+      Seed:
+      <input type="text" id="seedInput" value="fantasy" />
+    </label>
+    <label>
+      Size:
+      <input type="number" id="sizeInput" value="256" min="32" max="512" step="16"/>
+    </label>
+    <button id="generateBtn">Generate</button>
   </div>
-  <script src="main.js"></script>
+  <canvas id="mapCanvas" width="256" height="256"></canvas>
+  <div class="hint">
+    <p>
+      <strong>Instructions:</strong> Enter a seed and size, then click Generate.<br>
+      <em>The same seed always creates the same map. Roads connect towns, rivers flow from mountains.</em>
+    </p>
+    <p>
+      <a href="https://github.com/Marjamjelly/your-repo" target="_blank">GitHub Repo</a>
+    </p>
+  </div>
+  <script src="mapgen.js"></script>
 </body>
 </html>
