@@ -2,32 +2,25 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Seed-based Pixel Fantasy Map Generator</title>
-  <meta name="viewport" content="width=600, initial-scale=1">
+  <title>Tile-based Fantasy Map Generator</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div id="controls">
     <label>
       Seed:
-      <input type="text" id="seedInput" value="fantasy" />
+      <input type="text" id="seedInput" value="stardew" />
     </label>
     <label>
-      Size:
-      <input type="number" id="sizeInput" value="256" min="32" max="512" step="16"/>
+      Map Size (tiles):
+      <input type="number" id="sizeInput" value="32" min="8" max="128" />
     </label>
     <button id="generateBtn">Generate</button>
   </div>
-  <canvas id="mapCanvas" width="256" height="256"></canvas>
+  <canvas id="mapCanvas" width="512" height="512"></canvas>
   <div class="hint">
-    <p>
-      <strong>Instructions:</strong> Enter a seed and size, then click Generate.<br>
-      <em>The same seed always creates the same map. Roads connect towns, rivers flow from mountains.</em>
-    </p>
-    <p>
-      <a href="https://github.com/Marjamjelly/your-repo" target="_blank">GitHub Repo</a>
-    </p>
+    <p>Seed-based, tile-based pixel art map. Swap out JS tile code with your own PNGs for custom art!</p>
   </div>
-  <script src="mapgen.js"></script>
+  <script src="tilemap.js"></script>
 </body>
 </html>

@@ -1,70 +1,55 @@
 body {
-  background: #232946;
-  color: #eebbc3;
+  background: #1d2025;
+  color: #eee;
   font-family: 'Segoe UI', sans-serif;
   text-align: center;
   margin: 0;
-  padding: 0;
 }
-
 #controls {
-  margin: 30px auto 10px auto;
-  padding: 12px;
-  background: #121629;
-  border-radius: 10px;
+  margin: 24px auto 10px auto;
+  padding: 14px;
+  background: #232946;
+  border-radius: 12px;
   display: inline-block;
-  box-shadow: 0 2px 8px #0008;
+  box-shadow: 0 2px 8px #0005;
 }
-
 #controls label {
   margin: 0 10px;
   font-size: 1.1em;
 }
-
-#controls input {
-  background: #232946;
+#controls input,
+#controls button {
+  background: #121629;
   color: #eebbc3;
   border: 1px solid #eebbc3;
   border-radius: 4px;
   padding: 2px 8px;
   font-size: 1em;
 }
-
 #controls button {
+  font-weight: bold;
+  margin-left: 10px;
   background: #eebbc3;
   color: #232946;
   border: none;
-  border-radius: 5px;
-  padding: 6px 18px;
-  font-weight: bold;
-  font-size: 1.1em;
   cursor: pointer;
-  margin-left: 10px;
 }
-#controls button:hover {
-  background: #f7cfcf;
-}
-
+#controls button:hover { background: #fff1f1; }
 canvas {
   margin: 16px auto;
   display: block;
   image-rendering: pixelated;
-  border: 2px solid #eebbc3;
-  background: #11131a;
+  background: #222;
   border-radius: 8px;
+  border: 3px solid #eebbc3;
 }
-
 .hint {
-  margin: 12px auto;
+  margin: 15px auto;
   max-width: 560px;
   color: #b8c1ec;
   font-size: 1em;
-  background: #121629;
+  background: #232946;
   border-radius: 10px;
   padding: 12px 18px;
-  opacity: 0.95;
-}
-.hint a {
-  color: #eebbc3;
-  text-decoration: underline;
+  opacity: 0.93;
 }
