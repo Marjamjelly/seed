@@ -2,19 +2,15 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>90s Terminal RNG</title>
+  <title>RNG Terminal</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="terminal">
+  <div id="centerbox">
     <form id="seedForm" autocomplete="off">
-      <label for="seedInput">Enter seed:</label>
-      <input id="seedInput" type="text" autofocus />
-      <button type="submit">GENERATE</button>
+      <input id="seedInput" type="text" autofocus autocomplete="off" />
     </form>
-    <pre id="output"></pre>
-    <div class="blink-cursor"></div>
   </div>
   <script src="main.js"></script>
 </body>
